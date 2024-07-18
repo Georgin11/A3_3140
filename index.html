@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahtzee Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Yahtzee Game</h1>
+    </header>
+    <main>
+        <section id="game-area">
+            <div id="dice-container">
+                <div class="die" id="die0">0</div>
+                <div class="die" id="die1">0</div>
+                <div class="die" id="die2">0</div>
+                <div class="die" id="die3">0</div>
+                <div class="die" id="die4">0</div>
+            </div>
+            <button id="rollDiceButton">Roll Dice</button>
+            <div id="player-turn">Player 1's turn</div>
+        </section>
+        <section id="scoreboards">
+            <div id="player1-scoreboard" class="scoreboard">
+                <h2>Player 1 Scoreboard</h2>
+                <table>
+                    <tr><th>Category</th><th>Score</th></tr>
+                    <tr><td><button class="score-button" data-category="ones">Ones</button></td><td id="player1-ones-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="twos">Twos</button></td><td id="player1-twos-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="threes">Threes</button></td><td id="player1-threes-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="fours">Fours</button></td><td id="player1-fours-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="fives">Fives</button></td><td id="player1-fives-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="sixes">Sixes</button></td><td id="player1-sixes-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="threeKind">Three of a Kind</button></td><td id="player1-threeKind-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="fourKind">Four of a Kind</button></td><td id="player1-fourKind-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="fullHouse">Full House</button></td><td id="player1-fullHouse-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="smallStraight">Small Straight</button></td><td id="player1-smallStraight-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="largeStraight">Large Straight</button></td><td id="player1-largeStraight-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="yahtzee">Yahtzee</button></td><td id="player1-yahtzee-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="chance">Chance</button></td><td id="player1-chance-score">-</td></tr>
+                    <tr><td>Total Score</td><td id="player1-total-score">0</td></tr>
+                </table>
+            </div>
+            <div id="player2-scoreboard" class="scoreboard">
+                <h2>Player 2 Scoreboard</h2>
+                <table>
+                    <tr><th>Category</th><th>Score</th></tr>
+                    <tr><td><button class="score-button" data-category="ones">Ones</button></td><td id="player2-ones-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="twos">Twos</button></td><td id="player2-twos-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="threes">Threes</button></td><td id="player2-threes-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="fours">Fours</button></td><td id="player2-fours-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="fives">Fives</button></td><td id="player2-fives-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="sixes">Sixes</button></td><td id="player2-sixes-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="threeKind">Three of a Kind</button></td><td id="player2-threeKind-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="fourKind">Four of a Kind</button></td><td id="player2-fourKind-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="fullHouse">Full House</button></td><td id="player2-fullHouse-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="smallStraight">Small Straight</button></td><td id="player2-smallStraight-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="largeStraight">Large Straight</button></td><td id="player2-largeStraight-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="yahtzee">Yahtzee</button></td><td id="player2-yahtzee-score">-</td></tr>
+                    <tr><td><button class="score-button" data-category="chance">Chance</button></td><td id="player2-chance-score">-</td></tr>
+                    <tr><td>Total Score</td><td id="player2-total-score">0</td></tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Mohamed</p>
+    </footer>
+    <script src="game.js"></script>
+</body>
+</html>
